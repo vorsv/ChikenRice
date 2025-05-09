@@ -11,7 +11,7 @@
 
     "modules-left": ["custom/launcher", "custom/workspace-count", "hyprland/window"],
     "modules-center": [ "clock"],
-    "modules-right": ["custom/updates", "backlight", "temperature", "battery", "pulseaudio", "network", "tray","custom/power"],
+    "modules-right": ["custom/updates", "backlight", "cpu", "battery", "pulseaudio", "network", "tray","custom/power"],
 
 "custom/workspace-count": {
     "exec": "~/.config/hypr/scripts/workspace_count.sh", // Call simplest script
