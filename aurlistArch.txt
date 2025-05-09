@@ -17,6 +17,7 @@ fzf
 gedit
 git
 github-desktop
+gnome-keyring
 google-chrome
 gparted
 grim
