@@ -1,4 +1,3 @@
-// Based on #1576
 {
     "$schema": "https://github.com/fastfetch-cli/fastfetch/raw/dev/doc/json_schema.json",
     "display": {
@@ -29,7 +28,6 @@
             "key": "│  {icon}  Fetched   │{$3}│{$2}",
             "format": "{year}-{month-pretty}-{day-pretty} {hour-pretty}:{minute-pretty}:{second-pretty} {timezone-name}"
         },
-        // Hardware
         {
             "type": "custom",
             "key": "│{#cyan}┌──────────────┬{$1}┐{#keys}│\u001b[37D",
@@ -59,14 +57,12 @@
         {
             "type": "disk",
             "key": "│{#cyan}│ {icon}  Disk      │{$4}│{#keys}│{$2}",
-            "format": "{size-used} \/ {size-total} ({size-percentage}) - {filesystem}",
+            "format": "{size-used} \/ {size-total} ({size-percentage}) - {filesystem}"
         },
         {
             "type": "battery",
             "key": "│{#cyan}│ {icon}  Battery   │{$4}│{#keys}│{$2}"
         },
-
-        // Desktop
         {
             "type": "custom",
             "key": "│{#green}┌──────────────┬{$1}┐{#keys}│\u001b[37D",
@@ -90,8 +86,6 @@
             "key": "│{#green}│ {icon}  G-Driver  │{$4}│{#keys}│{$2}",
             "format": "{driver}"
         },
-
-        // Terminal
         {
             "type": "custom",
             "key": "│{#yellow}┌──────────────┬{$1}┐{#keys}│\u001b[37D",
@@ -109,8 +103,6 @@
             "type": "packages",
             "key": "│{#yellow}│ {icon}  Packages  │{$4}│{#keys}│{$2}"
         },
-
-        // Development
         {
             "type": "custom",
             "key": "│{#red}┌──────────────┬{$1}┐{#keys}│\u001b[39D",
@@ -166,8 +158,6 @@
             "type": "font",
             "key": "│{#red}│ {icon}  Interface │{$4}│{#keys}│{$2}"
         },
-
-        // Uptime
         {
             "type": "custom",
             "key": "│{#magenta}┌──────────────┬{$1}┐{#keys}│\u001b[36D",
@@ -187,11 +177,10 @@
             "type": "disk",
             "keyIcon": "",
             "key": "│{#magenta}│ {icon}  OS Age    │{$4}│{#keys}│{$2}",
-            "folders": "/", // On macOS, "/System/Volumes/VM" works for me
+            "folders": "/",
             "format": "{create-time:10} [{days} days]"
         },
         {
-            // localip IPv4
             "type": "localip",
             "keyIcon": "",
             "key": "│{#magenta}│ Local IPv4   │{#90}│",

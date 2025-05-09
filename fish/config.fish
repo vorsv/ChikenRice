@@ -350,12 +350,12 @@ function smart_fastfetch
         set cols (tput cols)
 
         # Define the threshold for "full size" (adjust as needed)
-        set full_width_threshold 120 # Example value
+        set full_width_threshold 80
 
         if test $cols -ge $full_width_threshold
-            fastfetch --config defaultNew.jsonc
+            fastfetch --config /home/vorsv/ChikenRice/fastfetch/defaultNew.jsonc
         else
-            fastfetch --config neofetch.jsonc
+            fastfetch --config  /home/vorsv/ChikenRice/fastfetch/neofetch.jsonc
         end
     end
 end
